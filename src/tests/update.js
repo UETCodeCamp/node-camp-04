@@ -3,14 +3,10 @@ const r = require('../helpers/request')
 exports.test = async (id) => {
     const response = await r.request({
         uri: `/todos/${id}`,
-        method: 'GET'
+        method: 'POST'
     })
 
-    // if (response !== 'Hello, world!') {
-    //     throw new Error('Wrong response.')
-    // }
-
-    console.log('test GET /todos ok.')
+    console.log('test UPDATE /todos ok.')
 
     return true
 }

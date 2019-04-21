@@ -1,7 +1,7 @@
 const hello = require('./hello')
 const get = require('./get')
 const post = require('./post')
-const put = require('./put')
+const update = require('./update')
 const del = require('./delete')
 
 const randomstring = require('randomstring')
@@ -11,9 +11,11 @@ exports.tests = async () => {
 
     const title = randomstring.generate(10)
 
+    console.log(title)
+
     await hello.test()
-    await post.test(title)
-    // await get.test()
-    // await put.test()
-    // await del.test()
+    const todoId = await post.test(title)
+    await get.test(todoId)
+    await update.test(todoId)
+    await del.test(todoId)
 }

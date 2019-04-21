@@ -1,14 +1,12 @@
 const r = require('../helpers/request')
 
-exports.test = async() => {
+exports.test = async(id) => {
     const response = await r.request({
-        uri: '/hello',
+        uri: `/todos/${id}`,
         method: 'DELETE'
     })
 
-    if (response !== 'world deleted') {
-        throw new Error('Wrong response.')
-    }
+    console.log('test DELETE /todos ok.')
 
     return true
 }

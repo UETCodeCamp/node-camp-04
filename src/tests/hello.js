@@ -6,6 +6,7 @@ exports.test = async () => {
         method: 'GET'
     })
 
+
     if (response !== 'Hello, world!') {
         throw new Error('Wrong response.')
     }

@@ -12,6 +12,8 @@ exports.run = async () => {
             is_pass: true,
         })
     } catch (error) {
+        console.log('Student error:', error.message)
+
         await pusher.submit({
             is_pass: false,
             message: error.message || ''
