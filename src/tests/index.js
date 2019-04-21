@@ -6,11 +6,10 @@ const del = require('./delete')
 
 const randomstring = require('randomstring')
 
-
 exports.tests = async () => {
     console.log('Run all tests.')
 
-    const title = randomstring(10)
+    const title = randomstring.generate(10)
 
     await hello.test()
     await post.test(title)
