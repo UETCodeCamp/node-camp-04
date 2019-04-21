@@ -10,5 +10,7 @@ exports.test = async () => {
         throw new Error('Wrong response.')
     }
 
+    console.log('Test route / ok.')
+
     return true
 }
