@@ -1,0 +1,27 @@
+{
+  "name": "node-camp-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UETCodeCamp/node-camp-02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UETCodeCamp/node-camp-02/issues"
+  },
+  "homepage": "https://github.com/UETCodeCamp/node-camp-02#readme",
+  "dependencies": {
+    "@uet/pusher": "^1.1.0",
+    "dotenv": "^7.0.0",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}
