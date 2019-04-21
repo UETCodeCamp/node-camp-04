@@ -12,7 +12,7 @@ exports.tests = async () => {
     const title = randomstring.generate(10)
 
     await hello.test()
-    // await post.test(title)
+    await post.test(title)
     // await get.test()
     // await put.test()
     // await del.test()
