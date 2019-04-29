@@ -8,7 +8,7 @@ exports.test = async () => {
 
 
     if (response !== 'Hello, world!') {
-        throw new Error('Wrong response.')
+        throw new Error(`Wrong response: GET /`)
     }
 
     console.log('Test route / ok.')

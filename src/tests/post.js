@@ -11,17 +11,16 @@ exports.test = async (title = '') => {
     })
 
     if (typeof response !== 'object') {
-        throw new Error('Response is invalid.')
+        throw new Error('Response is invalid. POST /todos')
     }
-
 
     const {success, data, message} = Object.assign({}, response)
     if (!success) {
-        throw new Error(message)
+        throw new Error(`Cannot create a new todo. Message: ${message}`)
     }
 
     if (typeof data !== 'object' || !data._id) {
-        console.log('Wrong response.')
+        throw new Error(`Wrong response: POST /todos`)
     }
 
     console.log('test POST /todos ok.')

@@ -13,11 +13,11 @@ exports.test = async (id) => {
     }
 
     if (typeof data !== 'object' || !data._id) {
-        console.log('Wrong response.')
+        throw new Error(`Wrong response: GET /todos/${id}`)
     }
 
     if (data._id !== id) {
-        throw new Error('Wrong response.')
+        throw new Error(`Wrong response: GET /todos/${id}`)
     }
 
     console.log('test GET /todos ok.')
