@@ -5,6 +5,8 @@ exports.run = async () => {
     console.log('Student host:', process.env.STUDENT_HOST)
     console.log('Submit host:', process.env.SUBMIT_HOST)
 
+    throw new Error('The test is not ready.')
+
     try {
         await tests.tests()
 
