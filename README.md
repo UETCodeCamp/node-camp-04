@@ -15,7 +15,7 @@ Cho một tài liệu API sau, viết một ứng dụng web server thỏa mãn 
 | 5   | GET    |/categories/:id     |                     |{success: true, data: CateObject*}     |
 | 6   | POST   |/categories/:id     |{name: 'Category B'} |{success: true, data: CateObject*}     |
 | 7   | DELETE |/categories/:id     |                     |{success: true, data: true}            |
-| 8   | DELETE |/categories/:id/todos     |               |{success: true, data: [TodoObject*]}            |
+| 8   | GET    |/categories/:id/todos     |               |{success: true, data: [TodoObject*]}            |
 |     |        |                    |                     |                                       |
 | 9   | POST   |/todos              |{title: 'Task 1'}    |{success: true, data: TodoObject*}     |
 | 10   | GET    |/todos/:id          |                     |{success: true, data: TodoObject*}     |                                   |
